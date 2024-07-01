@@ -1,3 +1,5 @@
+ https://caner-yesiltas.github.io/Media-Query-Samsung-Assigment/
+
 ## Project Title: Responsive Product Card HTML/CSS Design
 
 ### Description:
