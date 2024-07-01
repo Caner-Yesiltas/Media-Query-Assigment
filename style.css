@@ -10,6 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .product {
@@ -19,9 +20,10 @@
   -webkit-box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.75);
-  background-color: rgb(251, 254, 255);
+  background-color: rgb(178, 228, 245);
   flex-wrap: wrap;
   justify-content: space-evenly;
+  border-radius: 1.95rem;
 
   
 }
@@ -61,11 +63,21 @@ H4 {
   font-size: 1.5rem;
 }
 
+
+img:hover{
+    opacity: 1;
+    filter: brightness(60%);
+    box-shadow: 0 0 15px 5px rgba(2, 22, 202, 0.996);
+    transform: scale(1.05);
+    transition: all 0.7s ease;
+}
 .button1,
 .button2,
 .button3 {
   padding: 1rem;
   cursor: pointer;
+  color: rgb(100, 102, 237);
+  font-weight: 800;
 }
 
 .MemoryandStorage-btn {
@@ -74,23 +86,25 @@ H4 {
 }
 
 .card {
-  padding: 1.7rem;
-  border-radius: 30%;
+  padding: 1.4rem;
+  border-radius: .625rem;
   cursor: pointer;
   border: 0.0625rem solid rgb(109, 44, 1);
-  background-color: rgb(238, 225, 216);
+  background-color: rgb(236, 231, 226);
   -webkit-box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.75);
-  height: 4rem;
+  height: 3rem;
   display: flex;
   align-items: center;
   gap: 1rem;
   font-weight: 800;
+ 
+
 }
 
 .card:hover {
-  background-color: rgb(240, 187, 89);
+  background-color: rgb(248, 213, 11);
 }
 .addtocard-btn {
   display: flex;
@@ -109,6 +123,8 @@ i {
   font-size: 1.5rem;
   color: chocolate;
 }
+footer{color: rgb(129, 7, 103);}
+
 
 
 @media screen and (max-width: 1800px) {.product {
@@ -122,7 +138,11 @@ i {
     flex-wrap: wrap;
    
     flex-direction: column;
-  
+ 
+  }
+
+  img{ margin-top: 20rem;
+    
     
   }
 
@@ -141,6 +161,17 @@ i {
   display: block;
   }
 }
+
+
+
+@media screen and (max-width:963px) {
+    img{ margin-top: 10rem;
+    
+    
+    }
+
+}
+
 
 @media screen and (max-width:661px) {
 
@@ -181,5 +212,9 @@ height: 3rem;
 padding: 0.6rem;
  }
 
+ footer{
+    text-align: center;
+    word-wrap: break-word; 
+ }
 
 }
