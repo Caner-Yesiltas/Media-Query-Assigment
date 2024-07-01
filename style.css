@@ -1,69 +1,109 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
- 
-  
-  .container{
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
   height: 100vh;
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  }
+.product {
+  display: flex;
+  height: 90vh;
+  width: 90%;
+  -webkit-box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.75);
+  background-color: rgb(251, 254, 255);
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
+.left-product {
+  padding: 5%;
 
-  .product{
-display: flex;
-height: 90vh;
-width: 90%;
-    -webkit-box-shadow: 0px 7px 30px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 7px 30px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 7px 30px 0px rgba(0,0,0,0.75);
-background-color: rgb(202, 231, 240);
-flex-wrap: wrap;
-justify-content: space-evenly;
+  width: 30%;
+}
 
+.samsung-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  }
+span {
+  color: indigo;
+}
 
-  .left-product{
-    
-    padding:5% ;
+.samsung-img img {
+  cursor: pointer;
 
-width: 30%;
+  object-fit: contain;
+  border-radius: 1.5625rem;
+}
 
-  }
+.right-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.3rem;
+}
 
-  .samsung-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+H4 {
+  font-size: 1.5rem;
+}
 
+.button1,
+.button2,
+.button3 {
+  padding: 1rem;
+  cursor: pointer;
+}
 
-  .samsung-img img{
- 
-   
-  
-object-fit: contain;
-border-top-left-radius: 1.25rem;
+.MemoryandStorage-btn {
+  display: flex;
+  gap: 1.5rem;
+}
 
- border-bottom-right-radius: 1.25rem;
+.card {
+  padding: 1.7rem;
+  border-radius: 30%;
+  cursor: pointer;
+  border: 0.0625rem solid rgb(109, 44, 1);
+  background-color: rgb(238, 225, 216);
+  -webkit-box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.75);
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 800;
+}
 
-  }
-
-  .right-product{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  H4{
-    font-size: 1.5rem;
-  }
+.card:hover {
+  background-color: rgb(240, 187, 89);
+}
+.addtocard-btn {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+}
+h5 {
+  font-size: 2rem;
+  text-align: center;
+  justify-content: center;
+  color: rgb(41, 106, 228);
+  font-style: italic;
+}
+i {
+  font-size: 1.5rem;
+  color: chocolate;
+}
